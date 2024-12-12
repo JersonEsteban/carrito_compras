@@ -1,0 +1,144 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #121212, #1f1f1f);
+    color: #fff;
+}
+
+
+.encabezado {
+    background-color: #16b9be; 
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+.galeria-productos {
+    padding: 20px;
+}
+
+.galeria-productos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0ab2b8; 
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: #0a8e97;
+    margin-bottom: 10px;
+}
+
+.producto .precio {
+    font-weight: bold;
+    color: #0a8fa7;
+    margin-bottom: 15px;
+}
+
+.boton-agregar {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+    background-color: #0056b3; 
+}
+
+/* Modal */
+.modal-carrito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-carrito .contenido-carrito {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.resumen {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.limpiar_carrito{
+    background-color: #0a8e97;
+    border: none;
+    border-radius: 4px;
+}
+
+.limpiar_carrito:hover{
+    background-color: rgb(101, 224, 85);
+}
+
+.cerrar_carrito{
+    background-color: #0a8e97;
+    border: none;
+    border-radius: 4px;
+}
+.cerrar_carrito:hover{
+    background-color: rgb(101, 224, 85);
+    
+}
+
+
+.pie-pagina {
+    background-color: #0bbcd3;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+

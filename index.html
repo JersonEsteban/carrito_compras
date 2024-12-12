@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Mi Tienda Virtual</h1>
+    </header>
+    <main class="galeria-productos">
+        <h2>Productos Disponibles</h2>
+        <div class="productos">
+            <section class="producto">
+                <img src="images/camisas.jpg" alt="Camiseta deportiva">
+                <h3>Camiseta deportiva</h3>
+                <p>Tela fría talla M</p>
+                <p class="precio">$50.000</p>
+                <button class="boton-agregar" data-nombre="Camiseta deportiva" data-precio="50000">Agregar al carrito</button>
+            </section>
+            <section class="producto">
+                <img src="images/zapatos.jpg" alt="Zapatos">
+                <h3>Zapatos</h3>
+                <p>Disponible todas las tallas</p>
+                <p class="precio">$150.000</p>
+                <button class="boton-agregar" data-nombre="Zapatos" data-precio="150000">Agregar al carrito</button>
+            </section>
+            <section class="producto">
+                <img src="images/chaquetas.jpg" alt="Chaquetas">
+                <h3>Chaquetas</h3>
+                <p>Todas las tallas</p>
+                <p class="precio">$90.000</p>
+                <button class="boton-agregar" data-nombre="Chaquetas" data-precio="90000">Agregar al carrito</button>
+            </section>
+            <section class="producto">
+                <img src="images/pantalon.jpg" alt="Pantalón">
+                <h3>Pantalón</h3>
+                <p>Disponible todas las tallas</p>
+                <p class="precio">$70.000</p>
+                <button class="boton-agregar" data-nombre="Pantalón" data-precio="70000">Agregar al carrito</button>
+            </section>
+        </div>
+    </main>
+    <section class="modal-carrito" id="carrito">
+        <div class="contenido-carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <div class="resumen">
+                <p>Total a pagar: <span id="total-pagar">$0.00</span></p>
+                <button class="limpiar_carrito" id="limpiar-carrito">Limpiar Carrito</button>
+                <button class="cerrar_carrito" id="cerrar-carrito">Seguir Comprando</button>
+            </div>
+        </div>
+    </section>
+    <footer class="pie-pagina">
+        <p>2024 Tienda Virtual. Todos los derechos reservados.</p>
+        <p>@jerson_pacheco</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
